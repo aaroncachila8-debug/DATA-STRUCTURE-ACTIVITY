@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int hours, minutes;
+
+    // Input hours and minutes
+    cout << "Input hours: ";
+    cin >> hours;
+    
+    cout << "Input minutes: ";
+    cin >> minutes;
+
+    // Calculate total minutes
+    int total = (hours * 60) + minutes;
+
+    // Output the result
+    cout << "Total: " << total << " minutes" << endl;
+
+    return 0;
+}

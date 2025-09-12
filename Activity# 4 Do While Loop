@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    cout<< "THIS IS SQUARED CALCULATOR PROGRAM(DO WHILE)\n";
+    cout << "\n";
+    int num, squared;
+    int i = 1;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    do {
+        squared= i *i;
+        cout << i << " squared = " << squared << endl;
+        i++;
+    } while (i <= num);
+
+    return 0;
+}

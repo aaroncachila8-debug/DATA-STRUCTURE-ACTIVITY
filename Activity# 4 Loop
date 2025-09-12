@@ -1,0 +1,23 @@
+1. multiplication table
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	cout<< "THIS IS A MULTIPLICATION PROGRAM(FOR LOOP)\n";
+	cout << "\n";
+	
+	int num;
+	
+	cout << "Enter number: ";
+	cin >> num;
+	
+	for(int i=1; i<= 10; i++){
+		int product= num * i;
+			cout<< num << "x" << i << "=" << product << endl;
+	
+	}
+	
+	return 0;
+}

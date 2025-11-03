@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cmath> // for M_PI and pow()
+using namespace std;
+
+int main() {
+    int choice;
+    double radius, length, width, area;
+
+    cout << "=== Simple Menu ===" << endl;
+    cout << "1. Compute Area of Circle" << endl;
+    cout << "2. Compute Area of Rectangle" << endl;
+    cout << "3. Exit" << endl;
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            cout << "\nEnter radius: ";
+            cin >> radius;
+            area = M_PI * pow(radius, 2);
+            cout << "Area of Circle: " << area << endl;
+            break;
+
+        case 2:
+            cout << "\nEnter length: ";
+            cin >> length;
+            cout << "Enter width: ";
+            cin >> width;
+            area = length * width;
+            cout << "Area of Rectangle: " << area << endl;
+            break;
+
+        case 3:
+            cout << "\nGoodbye!" << endl;
+            break;
+
+        default:
+            cout << "\nInvalid choice." << endl;
+            break;
+    }
+
+    return 0;
+}

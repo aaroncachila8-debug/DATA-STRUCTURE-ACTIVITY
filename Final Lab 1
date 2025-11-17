@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int list[5] = {1, 2, 3, 4, 5};
+
+    cout << "Accessing valid index 2: " << list[2] << endl;
+
+    // Intentionally accessing an invalid index
+    cout << "Accessing invalid index 5: " << list[5] << endl; // Out-of-bounds
+
+    return 0;
+}

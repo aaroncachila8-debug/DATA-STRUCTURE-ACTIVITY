@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int list1[10] = {0};
+    int list2[10] = {8, 5, 12};
+    int list3[3]  = {5, 6, 3};
+    int list4[25] = {4, 7};
+
+    // Print list1
+    cout << "list1: ";
+    for (int i = 0; i < 10; i++)
+        cout << list1[i] << " ";
+    cout << endl;
+
+    // Print list2
+    cout << "list2: ";
+    for (int i = 0; i < 10; i++)
+        cout << list2[i] << " ";
+    cout << endl;
+
+    // Print list3
+    cout << "list3: ";
+    for (int i = 0; i < 3; i++)
+        cout << list3[i] << " ";
+    cout << endl;
+
+    // Print list4
+    cout << "list4: ";
+    for (int i = 0; i < 25; i++)
+        cout << list4[i] << " ";
+    cout << endl;
+
+    return 0;
+}

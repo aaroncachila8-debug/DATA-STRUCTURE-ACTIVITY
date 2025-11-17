@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Array initialization
+    double sales[] = {12.25, 32.50, 16.90, 23.00, 45.68};
+
+    int size = sizeof(sales) / sizeof(sales[0]);
+
+    // Display elements
+    cout << "Sales values:\n";
+    for (int i = 0; i < size; i++) {
+        cout << sales[i] << " ";
+    }
+    cout << endl;
+
+    // Calculate average
+    double total = 0;
+    for (int i = 0; i < size; i++) {
+        total += sales[i];
+    }
+    double average = total / size;
+
+    cout << "Average sales = " << average << endl;
+
+    return 0;
+}
